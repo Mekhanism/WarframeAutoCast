@@ -5,13 +5,11 @@ import java.awt.event.KeyEvent;
 
 public class Octavia extends Frame {
     private final int timer = 47500;
-    private final CastInviz inv = new CastInviz();
     protected Octavia() throws AWTException {
     }
 
     @Override
     public void run() {
-        inv.start();
         while (!checkThread) {
             try {
                 synchronized (Frame.class) {
